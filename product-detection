@@ -1,0 +1,69 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "from keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "output_type": "error",
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-1-be76e5071e64>, line 1)",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-1-be76e5071e64>\"\u001b[0;36m, line \u001b[0;32m1\u001b[0m\n\u001b[0;31m    datagen = ImageDataGenerator)\u001b[0m\n\u001b[0m                                ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "datagen = ImageDataGenerator(\n",
+    "        rotation_range=40,\n",
+    "        width_shift_range=0.2,\n",
+    "        height_shift_range=0.2,\n",
+    "        rescale=1./255,\n",
+    "        shear_range=0.2,\n",
+    "        zoom_range=0.2,\n",
+    "        horizontal_flip=True,\n",
+    "        fill_mode='nearest')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.9-final"
+  },
+  "orig_nbformat": 2,
+  "kernelspec": {
+   "name": "python36964bitvenvvenvff6b5ee3e9a248ff9a5b52dcc64c7046",
+   "display_name": "Python 3.6.9 64-bit ('venv': venv)"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
